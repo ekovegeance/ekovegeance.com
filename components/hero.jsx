@@ -11,10 +11,10 @@ export default function Hero() {
             <div className="space-y-4 text-center md:text-left">
               <h1
                 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-                Hi, Saya Eko Saputra
+                Hi, Saya Eko Saputra 
               </h1>
               <p className="max-w-[500px] text-muted-foreground md:text-xl">
-              UI/UX Designer, dan Fullstack Developer
+              Designer & software engineer
               </p>
               <div
                 className="flex flex-col gap-2 min-[400px]:flex-row justify-center md:justify-start">
