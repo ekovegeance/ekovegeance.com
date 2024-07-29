@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { Button } from './ui/button'
 import { Toggle } from './ui/toggle'
+import { ModeToggle } from './mode-toggle'
 
 export default function Navbar() {
   return (
@@ -32,15 +33,16 @@ export default function Navbar() {
             Contact
           </Link>
         </nav> */}
-        {/* <div className="flex items-center gap-4">
-          <Button variant="ghost" size="icon" className="md:hidden">
+        <div className="flex items-center gap-4">
+          {/* <Button variant="ghost" size="icon" className="md:hidden">
             <MenuIcon className="w-6 h-6" />
             <span className="sr-only">Toggle menu</span>
-          </Button>
-          <Toggle checked={isDarkMode} onCheckedChange={setIsDarkMode} className="ml-auto">
+          </Button> */}
+          {/* <Toggle className="ml-auto">
             <SunMoonIcon className="w-5 h-5" />
-          </Toggle>
-        </div> */}
+          </Toggle> */}
+          <ModeToggle />
+        </div>
       </header>
     </div>
   )
