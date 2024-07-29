@@ -12,7 +12,7 @@ export default function BioLink() {
       <div className="w-full max-w-md px-6 py-12 space-y-6">
         <div className="flex flex-col items-center space-y-4">
           <Avatar className="w-24 h-24">
-            <AvatarImage src="/ekovegeance.jpeg" />
+            <AvatarImage src="https://github.com/ekovegeance.png" />
             <AvatarFallback>ES</AvatarFallback>
           </Avatar>
           <div className="space-y-1 text-center">

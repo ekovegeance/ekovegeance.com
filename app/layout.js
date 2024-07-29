@@ -1,13 +1,12 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { icons } from "lucide-react";
 import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "ekovegeance",
-  description: "UI/UX Designer, dan Fullstack Developer",
+  description: "Designer & software engineer",
   icons: {
     icon: '/favicon.svg',
   }
