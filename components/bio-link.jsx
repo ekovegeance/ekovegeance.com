@@ -20,7 +20,7 @@ export default function BioLink() {
             <p className="text-muted-foreground">Software Engineer</p>
           </div>
           <p className="text-muted-foreground text-sm max-w-[300px] text-center">
-            Saya seorang insinyur perangkat lunak membangun produk inovatif.
+            Saya Designer & software engineer, membangun produk inovatif.
             Lihat tautan saya di bawah untuk mempelajarinya lebih banyak tentang
             saya dan pekerjaan saya.
           </p>
