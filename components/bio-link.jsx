@@ -11,13 +11,13 @@ export default function BioLink() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-background text-foreground">
       <div className="w-full max-w-md px-6 py-12 space-y-6">
         <div className="flex flex-col items-center space-y-4">
-          <Avatar className="w-24 h-24">
+          <Avatar className="w-24 h-24 rounded-md">
             <AvatarImage src="https://github.com/ekovegeance.png" />
             <AvatarFallback>ES</AvatarFallback>
           </Avatar>
           <div className="space-y-1 text-center">
             <h2 className="text-2xl font-bold">Eko Saputra</h2>
-            <p className="text-muted-foreground">Software Engineer</p>
+            <p className="text-muted-foreground">ekovegeance</p>
           </div>
           <p className="text-muted-foreground text-sm max-w-[300px] text-center">
             Saya seorang Designer & software engineer, membangun produk inovatif.
