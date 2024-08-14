@@ -55,6 +55,12 @@ export function CommandDialogDemo() {
                 <span>Resume</span>
               </CommandItem>
             </Link>
+            <Link href="/books">
+              <CommandItem>
+                <SquareMousePointer className="w-4 h-4 mr-2" />
+                <span>Books</span>
+              </CommandItem>
+            </Link>
           </CommandGroup>
           <CommandSeparator />
           <CommandGroup heading="Links">
