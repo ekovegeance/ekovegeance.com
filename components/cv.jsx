@@ -59,12 +59,13 @@ export default function Cv() {
                   Ringkasan Profesional
                 </div>
                 <p className="text-muted-foreground">
-                  UI/UX Designer dan Front-End Developer dengan pengalaman lebih
-                  dari 1 tahun dalam membangun aplikasi web modern dan desain
-                  antarmuka yang intuitif. Terampil dalam menggunakan teknologi
+                  UI/UX Designer dan Front-End Developer dengan lebih dari 1
+                  tahun pengalaman dalam membangun aplikasi web modern dan
+                  desain antarmuka yang intuitif. Terampil menggunakan teknologi
                   terbaru seperti React.js, Next.js, dan Figma. Memiliki
-                  kemampuan kolaborasi tim yang kuat dan fokus pada kualitas
-                  kode serta pengalaman pengguna.
+                  kemampuan kolaborasi tim yang kuat, berfokus pada kualitas
+                  kode dan pengalaman pengguna, serta berkomitmen untuk
+                  menghasilkan solusi yang efektif dan user-friendly.
                 </p>
               </div>
               <div>
