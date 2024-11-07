@@ -49,10 +49,10 @@ export function CommandDialogDemo() {
                 <span>Bio</span>
               </CommandItem>
             </Link>
-            <Link href="/resume">
+            <Link href="/cv">
               <CommandItem>
                 <SquareMousePointer className="w-4 h-4 mr-2" />
-                <span>Resume</span>
+                <span>CV</span>
               </CommandItem>
             </Link>
             <Link href="/books">

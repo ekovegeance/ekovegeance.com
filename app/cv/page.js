@@ -1,10 +1,10 @@
-import Resume from '@/components/resume'
+import Cv from '@/components/cv'
 import React from 'react'
 
 export default function ResumesPage () {
   return (
     <div>
-        <Resume/>
+        <Cv/>
     </div>
   )
 }
