@@ -267,11 +267,12 @@ export default function Cv() {
                 <ul className="mt-2 list-disc ms-4 text-muted-foreground">
                   <li>
                     DracOS GNU/Linux RemasteredDracOS GNU/Linux Remastered -
-                    sistem operasi Linux open-source dari Indonesia, yang
-                    dibangun berdasarkan proyek Debian Live. Didesain untuk
-                    pengujian keamanan (penetration testing), DracOS menyediakan
-                    berbagai alat untuk pentest, forensik, dan rekayasa balik,
-                    dengan dukungan GUI dan CLI.
+                    Berkontribusi dalam pengembangan DracOS GNU/Linux
+                    Remastered, sebuah distro Linux open-source yang dibangun
+                    berdasarkan proyek Debian Live. Didesain untuk pengujian
+                    keamanan (penetration testing), DracOS menyediakan berbagai
+                    alat untuk pentest, forensik, dan rekayasa balik, dengan
+                    dukungan GUI dan CLI.
                   </li>
                 </ul>
               </div>
@@ -285,14 +286,31 @@ export default function Cv() {
                     Alibaba Cloud Certified Developer - Alibaba Cloud Academy
                     (2023)
                   </li>
-                  <li>Juara 1 ITI - 1st Palembang Business Plan Award (2022)</li>
-                  <li>TryHackMe Pre Security Learning Path - TryHackMe (2022)</li>
-                  <li>Memulai Pemrograman Dengan Python - Dicoding Indonesia (2021)</li>
-                  <li>Belajar Dasar Visualisasi Data - Dicoding Indonesia (2021)</li>
+                  <li>
+                    Juara 1 ITI - 1st Palembang Business Plan Award (2022)
+                  </li>
+                  <li>
+                    TryHackMe Pre Security Learning Path - TryHackMe (2022)
+                  </li>
+                  <li>
+                    Memulai Pemrograman Dengan Python - Dicoding Indonesia
+                    (2021)
+                  </li>
+                  <li>
+                    Belajar Dasar Visualisasi Data - Dicoding Indonesia (2021)
+                  </li>
                   <li>CCNA: Introduction to Networks - Cisco NetAcad (2021)</li>
-                  <li>Cloud Practitioner Essentials (Belajar Dasar AWS Cloud) - Dicoding Indonesia (2021)</li>
-                  <li>CCNA: Switching, Routing, and Wireless Essentials - Cisco NetAcad (2020)</li>
-                  <li>Certified Fundamentals of Digital Marketing - Google (2019)</li>
+                  <li>
+                    Cloud Practitioner Essentials (Belajar Dasar AWS Cloud) -
+                    Dicoding Indonesia (2021)
+                  </li>
+                  <li>
+                    CCNA: Switching, Routing, and Wireless Essentials - Cisco
+                    NetAcad (2020)
+                  </li>
+                  <li>
+                    Certified Fundamentals of Digital Marketing - Google (2019)
+                  </li>
                 </ul>
               </div>
               <div>
