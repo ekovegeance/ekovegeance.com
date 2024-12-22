@@ -95,9 +95,12 @@ export default function Cv() {
                       Front End Developer
                     </div>
                     <div className="text-sm text-muted-foreground">
+                      Freelance
+                    </div>
+                    <div className="text-sm text-muted-foreground">
                       <Link href="https://www.payoprint.id/">
                         PT. Inaprint Lentera Teknologi Sriwijaya (payoprint) |
-                        Mei 2024 - Saat ini
+                        Mei 2024 - Des 2024
                       </Link>
                     </div>
                     <ul className="mt-2 list-disc ms-4 text-muted-foreground">
