@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "./ui/button";
 import { Name } from "./motion/name";
 import { TextLoop } from "./ui/text-loop";
 
@@ -45,12 +44,6 @@ export default function Hero() {
             alt="ekovegeance"
             className="object-cover w-48 h-48 rounded-lg md:w-64 md:h-64"
           />
-          {/* <img
-              src="/ekovegeance.jpeg"
-              width={400}
-              height={400}
-              alt="Hero"
-              className="object-cover w-48 h-48 rounded-lg md:w-64 md:h-64" /> */}
         </div>
       </section>
     </div>

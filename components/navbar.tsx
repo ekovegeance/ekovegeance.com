@@ -1,7 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import { Button } from './ui/button'
-import { Toggle } from './ui/toggle'
 import { ModeToggle } from './mode-toggle'
 
 export default function Navbar() {
