@@ -9,7 +9,7 @@ export function Name({name} : {name: string}) {
   return (
     <a
       href='#'
-      className='transition-colors text-zinc-500 hover:text-black dark:hover:text-white'
+      className='transition-colors text-primary hover:text-primary dark:hover:text-white'
     >
       <TextScramble
         className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl'

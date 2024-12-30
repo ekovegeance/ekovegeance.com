@@ -9,7 +9,7 @@ export default function Footer() {
         <div
           className="flex items-center gap-2 text-xs text-muted-foreground dark:text-card-foreground">
           <ServerIcon className="w-4 h-4" />
-          <Link href="https://status.ekovegeance.com/"><p className=" text-blue">System Status: Online</p></Link>
+          <Link href="https://status.ekovegeance.com/"><p className="text-teal-700">System Status: Online</p></Link>
         </div>
         <p className="text-xs text-muted-foreground dark:text-card-foreground">
           &copy; 2024 ekovegeance. All rights reserved.
