@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { Name } from "./motion/name";
+import { TextLoop } from "./ui/text-loop";
 
 export default function Hero() {
   return (
@@ -9,12 +11,11 @@ export default function Hero() {
       <section id="hero" className="w-full py-12 md:py-24 lg:py-32">
         <div className="container flex flex-col items-center justify-between gap-8 px-4 md:px-6 md:flex-row">
           <div className="space-y-4 text-center md:text-left">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-              Hi, Saya Eko Saputra
-            </h1>
-            <p className="max-w-[500px] text-muted-foreground md:text-xl">
-              Designer & software engineer
-            </p>
+            <Name name="Hi, Saya Eko Saputra"/>
+            <TextLoop className="flex max-w-[500px] text-muted-foreground md:text-xl">
+              <p>Designer</p>
+              <p>Software Engineer</p>
+            </TextLoop>
             <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center md:justify-start">
               <Link
                 href="https://github.com/ekovegeance"
