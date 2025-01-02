@@ -11,7 +11,7 @@ export function getData() {
         links: {
             website: "www.ekovegeance.com",
             linkedin: "linkedin.com/in/ekovegeance/",
-            github: "gitub.com/ekovegeance",
+            github: "github.com/ekovegeance",
         },
         education: [
             {
