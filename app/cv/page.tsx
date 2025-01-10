@@ -1,10 +1,12 @@
-import Cv from '@/components/cv'
-import React from 'react'
+import { CommandDialogDemo } from "@/components/command";
+import Cv from "@/components/cv";
+import React from "react";
 
-export default function ResumesPage () {
+export default function ResumesPage() {
   return (
     <div>
-        <Cv/>
+      <CommandDialogDemo />
+      <Cv />
     </div>
-  )
+  );
 }

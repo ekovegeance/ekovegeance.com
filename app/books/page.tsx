@@ -1,11 +1,12 @@
-import React from 'react'
-import Book from '@/components/book'
-
+import React from "react";
+import Book from "@/components/book";
+import { CommandDialogDemo } from "@/components/command";
 
 export default function BooksPage() {
   return (
     <div>
-        <Book />
+      <CommandDialogDemo />
+      <Book />
     </div>
-  )
+  );
 }

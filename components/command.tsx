@@ -110,9 +110,7 @@ export function CommandDialogDemo() {
                 <span>Instagram</span>
               </CommandItem>
             </Link>
-
           </CommandGroup>
-          
         </CommandList>
       </CommandDialog>
     </>
