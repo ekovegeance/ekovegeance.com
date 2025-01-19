@@ -30,7 +30,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/search/page.tsx"  ],
+, "app/search/page.tsx", "vitest.config.mts"  ],
   "exclude": [
     "node_modules"
   ]
