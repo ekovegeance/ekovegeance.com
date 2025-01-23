@@ -65,20 +65,20 @@ export default function Cv() {
                 <div className="grid gap-4">
                   <div>
                     {data.education.map((edu, index) => (
-                      <div key={index}>
+                      <div key={index} className="mb-4">
                         <Link href={edu.link}>
-                        <div className="mb-1 text-lg font-semibold hover:text-teal-700">
-                          {edu.institution}
-                        </div>
-                        <div className="text-sm text-muted-foreground">
-                          {edu.degree}
-                        </div>
-                        <div className="text-sm text-muted-foreground">
-                          {edu.field} | {edu.date}
-                        </div>
-                        <div className="text-sm text-muted-foreground">
-                          IPK: {edu.gpa}
-                        </div>
+                          <div className="mb-1 text-lg font-semibold hover:text-teal-700">
+                            {edu.institution}
+                          </div>
+                          <div className="text-sm text-muted-foreground">
+                            {edu.degree}
+                          </div>
+                          <div className="text-sm text-muted-foreground">
+                            {edu.field} | {edu.date}
+                          </div>
+                          <div className="text-sm text-muted-foreground">
+                            {edu.gpa && "IPK: " + edu.gpa}
+                          </div>
                         </Link>
                       </div>
                     ))}
@@ -86,27 +86,52 @@ export default function Cv() {
                 </div>
               </div>
               <div>
+                {" "}
+                <div className="mb-2 text-xl font-bold">
+                  Pengalaman Organisasi
+                </div>
+                {data.organizations.map((org, index) => (
+                  <div key={index} className="mb-4">
+                    <div>
+                      <Link href={org.link}>
+                        <div className="mb-1 text-lg font-semibold hover:text-teal-700">
+                          {org.organization}
+                        </div>
+                        <div className="text-sm text-muted-foreground">
+                          {org.position} | {org.date}
+                        </div>
+                        {/* <div className="text-muted-foreground">
+                          {org.description}
+                        </div> */}
+                        {/* <div className="text-sm text-muted-foreground">
+                      {org.location} | {org.date}
+                    </div> */}
+                      </Link>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div>
                 <div className="mb-2 text-xl font-bold">Pengalaman Kerja</div>
                 {data.experiences.map((exp, index) => (
                   <div key={index}>
                     <div>
-                    <Link href={exp.link}>
-                      <div className="mt-4 mb-1 text-lg font-semibold hover:text-teal-700">
-                        {exp.title}
-                      </div>
-                      <div className="text-sm text-muted-foreground">
-                        {exp.company}
-                      </div>
-                      <div className="text-sm text-muted-foreground">
-                        
+                      <Link href={exp.link}>
+                        <div className="mt-4 mb-1 text-lg font-semibold hover:text-teal-700">
+                          {exp.title}
+                        </div>
+                        <div className="text-sm text-muted-foreground">
+                          {exp.company}
+                        </div>
+                        <div className="text-sm text-muted-foreground">
                           {exp.location} | {exp.date}
-                        
-                      </div>
-                      <ul className="mt-2 list-disc ms-4 text-muted-foreground">
-                        {exp.description.map((desc, index) => (
-                          <li key={index}>{desc}</li>
-                        ))}
-                      </ul>
+                        </div>
+                        <ul className="mt-2 list-disc ms-4 text-muted-foreground">
+                          {exp.description.map((desc, index) => (
+                            <li key={index}>{desc}</li>
+                          ))}
+                        </ul>
                       </Link>
                     </div>
                   </div>
@@ -146,7 +171,10 @@ export default function Cv() {
               </div> */}
 
               <div>
-                <Link href="https://certificate.ekovegeance.com/" className="mb-1 text-xl font-semibold hover:text-teal-700">
+                <Link
+                  href="https://certificate.ekovegeance.com/"
+                  className="mb-1 text-xl font-semibold hover:text-teal-700"
+                >
                   Sertifikat dan Penghargaan
                 </Link>
                 {data.certificates.map((certificate, index) => (

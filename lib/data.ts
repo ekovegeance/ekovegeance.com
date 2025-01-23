@@ -22,6 +22,31 @@ export function getData() {
                 date: "2020 - 2024",
                 gpa: "3.77",
             },
+            {
+                institution: "SMKN 1 Sintuk Toboh Gadang",
+                link: "https://www.smkn1sintoga.sch.id/",
+                degree: "",
+                field: "Rekayasa Perangkat Lunak",
+                date: "2016 - 2019",
+                gpa: "",
+            },
+        ],
+        organizations: [
+            {
+                organization: "Bina Darma Cyber Army",
+                position: "Wakil Ketua Umum",
+                date: "2021 - 2023",
+                link: "https://www.google.com/search?q=bina+darma+cyber+army&oq=bina+darma+cyber+army&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGD0yBggCEEUYPDIGCAMQRRg80gEINTUwN2owajGoAgCwAgA&sourceid=chrome&ie=UTF-8",
+                description:"Bina Darma Cyber Army (BDCA) merupakan sebuah komunitas yang terdapat pada Unversitas Bina Darma Palembang. Komunitas ini sendiri merupakan sekumpulan dari mahasiswa yang memiliki visi dan misi yang sama dan memiliki ketertarikan dalam satu bidang yang sama yaitu ilmu komputer."
+            },
+            {
+                organization: "OSIS SMKN 1 Sintuk Toboh Gadang",
+                position: "Wakil Ketua OSIS",
+                date: "2017-218",
+                link: "https://www.google.com/search?q=osis+smkn+1+sintuk+toboh+gadang&sca_esv=d0b455892eb4553b&sxsrf=AHTn8zosjlzv9CODaStZh2Yob1-VBXg3lw%3A1737607184268&ei=EMiRZ8zWD9uYseMP2qKjSQ&oq=osis+smkn+1+sintu&gs_lp=Egxnd3Mtd2l6LXNlcnAiEW9zaXMgc21rbiAxIHNpbnR1KgIIADIHECEYoAEYCkjhR1C8D1jOP3ACeAKQAQCYAe4BoAHME6oBBjIuMTYuMbgBA8gBAPgBAZgCFqACohTCAgQQABhHwgIKECMYgAQYJxiKBcICEBAuGIAEGNEDGMcBGCcYigXCAgsQABiABBiRAhiKBcICCxAAGIAEGLEDGIMBwgIOEAAYgAQYsQMYgwEYigXCAgUQLhiABMICERAuGIAEGLEDGNEDGIMBGMcBwgIQEC4YgAQYsQMYQxiDARiKBcICChAAGIAEGEMYigXCAhAQABiABBixAxhDGIMBGIoFwgIQEAAYgAQYsQMYgwEYigUYCsICBRAAGIAEwgIIEAAYgAQYsQPCAg4QLhiABBixAxjRAxjHAcICCxAuGIAEGMcBGK8BwgINEC4YgAQYsQMYQxiKBcICCBAuGIAEGLEDwgIOEC4YgAQYsQMYgwEYigXCAhEQABiABBiRAhixAxiDARiKBcICCxAuGIAEGLEDGIMBwgIQEAAYgAQYkQIYigUYRhj_AcICDRAAGIAEGLEDGEMYigXCAhwQABiABBiRAhiKBRhGGP8BGJcFGIwFGN0E2AEBwgIIEAAYgAQYywHCAgYQABgWGB7CAggQABiABBiiBMICBRAhGKABwgIFECEYnwXCAgQQIRgVmAMAiAYBkAYEugYGCAEQARgTkgcGNC4xNy4xoAfqiQE&sclient=gws-wiz-serp",
+                description:""
+            },
+
         ],
         experiences: [
             {
