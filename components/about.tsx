@@ -3,14 +3,15 @@
  * @see https://v0.dev/t/sBYqgYodkCe
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import Link from "next/link"
-import Keyboard from "./keyboard"
+import Link from "next/link";
+import ButtonMac from "./button-mac";
 
 export default function About() {
   return (
     <section className="py-12 mx-6 border-zinc-200/70 border-x md:py-24 lg:py-32 dark:border-zinc-700/70">
-      <div className="grid gap-8 ">
-        <div className="grid gap-4 border-b border-zinc-200/70 dark:border-zinc-700/70">
+      <div className="grid gap-8 transition duration-300 ease-in-out delay-150 hover:bg-zinc-50 hover:rounded-xl hover:mx-8 hover:-translate-y-1 ">
+        <div className="grid gap-4 border-b border-zinc-200/70 dark:border-zinc-700/70 ">
+        <ButtonMac/>
           <h2 className="mx-6 text-3xl font-bold tracking-tight sm:text-4xl">Tentang Saya</h2>
           <p className="mx-6 text-lg text-muted-foreground">
           Hallo! Saya seorang Designer & software engineer. Karier saya banyak dipengaruhi oleh Web dan Open Source.

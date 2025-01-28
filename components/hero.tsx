@@ -51,7 +51,7 @@ export default function Hero() {
               width={400}
               height={400}
               alt="ekovegeance"
-              className="object-cover w-48 h-48 rounded-lg md:w-64 md:h-64 hover:scale-105 hover:shadow-xl hover:rotate-12 hover:duration-300 hover:ease-in-out hover:transition-shadow hover:rounded-3xl "
+              className="object-cover w-48 h-48 transition duration-700 ease-in-out delay-150 rounded-lg md:w-64 md:h-64 hover:shadow-xl hover:rotate-12 hover:duration-700 hover:ease-in-out hover:transition-shadow hover:rounded-3xl hover:-translate-y-1 hover:scale-110"
             />
           </div>
         </div>
