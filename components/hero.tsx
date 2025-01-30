@@ -13,11 +13,10 @@ export default function Hero() {
       >
         <div className="flex flex-col items-center justify-around gap-8 px-12 border-zinc-200/70 border-y md:px-6 md:flex-row dark:border-zinc-700/70">
           <div className="space-y-4 text-center md:text-left ">
-           
-              <h1 className="text-4xl font-bold tracking-tight md:border-y md:border-zinc-200/70 sm:text-5xl md:text-6xl dark:border-zinc-700/70">
-                Halo, Saya Eko Saputra
-              </h1>
-            
+            <h1 className="text-4xl font-bold tracking-tight md:border-y md:border-zinc-200/70 sm:text-5xl md:text-6xl dark:border-zinc-700/70">
+              Halo, Saya Eko Saputra
+            </h1>
+
             {/* <Name name="Hi, Saya Eko Saputra" /> */}
             <TextLoop className="flex max-w-[500px] text-muted-foreground md:text-xl">
               <p>Designer</p>
@@ -51,7 +50,7 @@ export default function Hero() {
               width={400}
               height={400}
               alt="ekovegeance"
-              className="object-cover w-48 h-48 transition duration-700 ease-in-out delay-150 rounded-lg md:w-64 md:h-64 hover:shadow-xl hover:rotate-12 hover:duration-700 hover:ease-in-out hover:transition-shadow hover:rounded-3xl hover:-translate-y-1 hover:scale-110"
+              className="object-cover w-48 h-48 transition duration-700 ease-in-out delay-150 rounded-lg md:w-64 md:h-64 hover:shadow-xl hover:rotate-12 hover:duration-200 hover:ease-in-out hover:transition-shadow hover:rounded-3xl hover:-translate-y-1 hover:scale-110"
             />
           </div>
         </div>
@@ -59,5 +58,3 @@ export default function Hero() {
     </div>
   );
 }
-
-
