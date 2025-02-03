@@ -24,7 +24,7 @@ export default function Hero() {
             </TextLoop>
             <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center md:justify-start">
               <Link
-                href="https://github.com/ekovegeance"
+                href="/projects"
                 className="inline-flex items-center justify-center h-10 px-8 text-sm font-medium transition-colors rounded-md shadow text-primary-foreground bg-primary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                 prefetch={false}
               >

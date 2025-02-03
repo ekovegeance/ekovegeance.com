@@ -1,0 +1,145 @@
+import { Button } from "@/components/ui/button"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { ArrowRight, CircleDot, GitFork, MoreHorizontal, Star } from "lucide-react"
+import Link from "next/link"
+
+interface Repository {
+  id: string
+  name: string
+  description: string
+  language: string
+  languageColor: string
+  stargazers_count: number
+  forks: number
+  updated_at: string
+  isPrivate: boolean
+  html_url: string
+}
+
+// const repositories: Repository[] = [
+//   {
+//     id: "1",
+//     name: "next.js",
+//     description: "The React Framework for the Web. Follow @nextjs on Twitter to stay updated",
+//     language: "JavaScript",
+//     languageColor: "#f1e05a",
+//     stars: 115232,
+//     forks: 24891,
+//     updatedAt: "Updated 2 days ago",
+//     isPrivate: false,
+//   },
+//   {
+//     id: "2",
+//     name: "react",
+//     description: "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+//     language: "TypeScript",
+//     languageColor: "#3178c6",
+//     stars: 215234,
+//     forks: 45678,
+//     updatedAt: "Updated yesterday",
+//     isPrivate: false,
+//   },
+//   {
+//     id: "3",
+//     name: "internal-tools",
+//     description: "Internal development tools and utilities for the team",
+//     language: "TypeScript",
+//     languageColor: "#3178c6",
+//     stars: 12,
+//     forks: 3,
+//     updatedAt: "Updated 5 days ago",
+//     isPrivate: true,
+//   },
+// ]
+
+function formatNumber(num: number): string {
+  if (num >= 1000) {
+    return `${(num / 1000).toFixed(1)}k`
+  }
+  return num.toString()
+}
+
+export default function Projects({repos}: {repos: Repository[]}) {
+    const sortedRepos = repos.sort((a, b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime());
+  return (
+    <div className="w-full p-4 mx-auto divide-y md:max-w-4xl divide-border">
+      {sortedRepos.map((repo) => (
+        <div key={repo.id} className="px-4 py-6 transition-colors duration-200 hover:bg-gray-50 dark:hover:bg-zinc-900 hover:rounded-md">
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex-1 min-w-0 space-y-1">
+              <div className="flex items-center gap-2">
+                <h3 className="font-semibold truncate">
+                  <Link href={repo.html_url} className="hover:text-teal-600 hover:underline">
+                    {repo.name}
+                  </Link>
+                </h3>
+                <span className="inline-flex items-center rounded-full border px-2 py-0.5 text-xs font-medium text-muted-foreground">
+                  {repo.isPrivate ? "Private" : "Public"}
+                </span>
+              </div>
+              {repo.description && <p className="text-sm text-muted-foreground line-clamp-2">{repo.description}</p>}
+              <div className="flex items-center gap-4 text-xs text-muted-foreground">
+                {repo.language ? (
+                  <div className="flex items-center gap-1">
+                    <CircleDot className="w-3 h-3" style={{ color: repo.languageColor }} />
+                    {repo.language}
+                  </div>
+                ): "No language"}
+                {repo.stargazers_count > 0 && (
+                  <a href="#" className="flex items-center gap-1 hover:text-teal-600">
+                    <Star className="w-3 h-3" />
+                    {formatNumber(repo.stargazers_count)}
+                  </a>
+                )}
+                {repo.forks > 0 && (
+                  <a href="#" className="flex items-center gap-1 hover:text-teal-600">
+                    <GitFork className="w-3 h-3" />
+                    {formatNumber(repo.forks)}
+                  </a>
+                )}
+                <span>{new Date(repo.updated_at).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+              </div>
+            </div>
+
+            {/* <div className="flex items-center gap-2">
+              <Button variant="outline" size="sm" className="hidden sm:flex">
+                <Star className="w-4 h-4 mr-1" />
+                Star
+              </Button>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="ghost" size="icon" className="rounded-full">
+                    <MoreHorizontal className="w-4 h-4" />
+                    <span className="sr-only">More options</span>
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-[180px]">
+                  <DropdownMenuItem>
+                    <Star className="w-4 h-4 mr-2" />
+                    Star
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    <GitFork className="w-4 h-4 mr-2" />
+                    Fork
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem>
+                    <ArrowRight className="w-4 h-4 mr-2" />
+                    View repository
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div> */}
+          </div>
+        </div>
+      ))}
+    </div>
+  )
+}
+
