@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div>
         <footer
-        className="flex flex-col items-center w-full gap-2 px-4 py-6 border-t sm:flex-row shrink-0 md:px-6 dark:border-t-card">
+        className="flex flex-col items-center w-full gap-2 px-4 py-6 border-t sm:flex-row shrink-0 md:px-6 dark:border-zinc-700/70">
         <div
           className="flex items-center gap-2 text-xs text-muted-foreground dark:text-card-foreground">
           <ServerIcon className="w-4 h-4" />

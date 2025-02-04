@@ -17,7 +17,7 @@ export default function About() {
           Hallo! Saya seorang Designer & software engineer. Karier saya banyak dipengaruhi oleh Web dan Open Source.
           </p>
         </div>
-        <div className="grid gap-6 mx-6 border-y border-zinc-200/70 md:grid-cols-2 dark:border-zinc-700/70">
+        <div className="grid gap-6 mx-6 md:grid-cols-2 ">
           <div className="grid gap-2">
             <h3 className="text-xl font-semibold">Latar Belakang</h3>
             <p className="text-muted-foreground">
