@@ -8,7 +8,7 @@ export default function Navbar() {
         <header className="flex items-center justify-between px-4 lg:px-6 h-14">
         <Link href="#" className="flex items-center" prefetch={false}>
           {/* <CodeIcon className="w-6 h-6" /> */}
-          <span className="text-lg font-semibold">ekovegeance</span>
+          <span className="text-lg font-semibold">ekovegeance/</span>
           {/* <span className="sr-only">Portfolio</span> */}
         </Link>
         {/* <nav className="hidden gap-4 md:flex sm:gap-6">
