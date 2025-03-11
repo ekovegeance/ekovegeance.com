@@ -8,7 +8,7 @@ export default async function ProjectsPage() {
   const repos = await data.json();
 
   return (
-    <div className="container mx-auto border-zinc-200/70 dark:border-zinc-700/70 border-x ">
+    <div className="container mx-auto min-h-svh border-zinc-200/70 dark:border-zinc-700/70 border-x ">
       <div className="container p-4 mx-auto">
       <Tabs defaultValue="projects" className="w-full mx-auto">
         <TabsList>

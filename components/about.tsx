@@ -12,7 +12,7 @@ export default function About() {
       <div className="grid gap-8 transition duration-300 ease-in-out delay-150 hover:bg-zinc-50 hover:dark:bg-zinc-900 hover:rounded-xl hover:mx-8 hover:-translate-y-1 ">
         <div className="grid gap-4 border-b border-zinc-200/70 dark:border-zinc-700/70 ">
           <ButtonMac />
-          <h2 className="mx-6 text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="mx-6 text-2xl font-bold tracking-tight sm:text-3xl">
             About Me
           </h2>
           <p className="mx-6 text-lg text-muted-foreground">
@@ -22,7 +22,7 @@ export default function About() {
         </div>
         <div className="grid gap-6 mx-6 md:grid-cols-2 ">
           <div className="grid gap-2">
-            <h3 className="text-xl font-semibold">Background</h3>
+            <h3 className="text-lg font-semibold">Background</h3>
             <p className="text-muted-foreground">
               I spent my teenage years advocating and teaching people how to use
               Linux, contributing to Open Source projects and later developing
@@ -30,7 +30,7 @@ export default function About() {
             </p>
           </div>
           <div className="grid gap-2">
-            <h3 className="text-xl font-semibold">Interest</h3>
+            <h3 className="text-lg font-semibold">Interest</h3>
             <p className="text-muted-foreground">
               In my spare time, I enjoy exploring the latest web technologies,
               experimenting with design trends, and contributing to Open Source
@@ -38,7 +38,7 @@ export default function About() {
             </p>
           </div>
           <div className="grid gap-2">
-            <h3 className="text-xl font-semibold">Achievement</h3>
+            <h3 className="text-lg font-semibold">Achievement</h3>
             <p className="text-muted-foreground">
               I am proud to have won several design and application awards. I
               have also been featured in industry publications and spoken at
@@ -46,7 +46,7 @@ export default function About() {
             </p>
           </div>
           <div className="grid gap-2">
-            <h3 className="text-xl font-semibold">Contact</h3>
+            <h3 className="text-lg font-semibold">Contact</h3>
             <p className="text-muted-foreground">
               Feel free to contact me at {" "}
               <a

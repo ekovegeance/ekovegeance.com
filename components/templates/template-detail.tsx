@@ -3,14 +3,6 @@ import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import Image from "next/image";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "../ui/carousel";
-import { Card, CardContent } from "../ui/card";
 
 type templateDetailProps = {
   title: string;
@@ -39,15 +31,15 @@ export default function TemplateDetail({
   buy,
 }: templateDetailProps) {
   return (
-    <div>
+    <div className="">
       {/* Main Content */}
-      <div className="container px-4 py-8 mx-auto">
+      <div className="container px-4 py-8 mx-auto md:px-48">
         <div className="grid gap-14 md:grid-cols-2">
           {/* Left Column */}
           <div className="space-y-6">
             <Link
               href="/templates"
-              className="inline-flex items-center text-sm text-gray-600 hover:text-black"
+              className="inline-flex items-center text-sm text-primary"
             >
               <ArrowLeft className="w-4 h-4 mr-1" />
               Back to Templates
@@ -60,7 +52,7 @@ export default function TemplateDetail({
               </p>
             </div>
 
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center gap-4">
               <Link href={buy}>
                 <Button>Buy Now</Button>
               </Link>
@@ -98,29 +90,8 @@ export default function TemplateDetail({
           </div>
 
           {/* Right Column */}
-            <Carousel className="max-w-xs md:w-full md:max-w-full">
-              <CarouselContent>
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <CarouselItem key={index}>
-                    <div className="p-1">
-                      <Card>
-                        <CardContent className="flex items-center justify-center p-6 aspect-video">
-                          <span className="text-4xl font-semibold">
-                            {index + 1}
-                          </span>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-
-
-    
-            {/* <div className="p-8 mb-8 bg-white border border-gray-200 rounded-lg">
+          <div>
+            <div className="p-8 mb-8 bg-white border border-gray-200 rounded-lg">
               <Image
                 src={image}
                 alt={title}
@@ -128,7 +99,8 @@ export default function TemplateDetail({
                 width={1000}
                 className="object-cover w-full "
               />
-            </div> */}
+            </div>
+            </div>    
 
             <div className="space-y-4">
               <h3 className="text-xl font-bold">Description</h3>
