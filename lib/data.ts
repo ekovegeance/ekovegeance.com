@@ -207,3 +207,30 @@ export function getBooks() {
     ];
     return books;
 }
+
+export function getTemplates(){
+    const templates = [
+        {
+            title: "Financly",
+            description: "Financly helps you track expenses, manage budgets, and achieve your financial goals with ease.",
+            image: "/images/financly.png",
+            slug: "financly",
+            price: 500000,
+            demo: "https://financly.laravel.cloud/",
+            buy: "https://buy.com",
+            framework: "Laravel",
+            techStack: "Laravel 12, React 19",
+            useCase: "Finance",
+            css: "Tailwind CSS 4",
+            features: [
+                "Expense tracking",
+                "Budget management",
+                "Goal setting",
+                "Responsive design",
+            ],
+        },
+    ];
+
+    return templates;
+
+}
