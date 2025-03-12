@@ -9,21 +9,24 @@ export default async function ProjectsPage() {
 
   return (
     <div className="container mx-auto min-h-svh border-zinc-200/70 dark:border-zinc-700/70 border-x ">
-      <div className="container p-4 mx-auto">
-      <Tabs defaultValue="projects" className="w-full mx-auto">
-        <TabsList>
-          <TabsTrigger value="projects">Open Sources</TabsTrigger>
-          <TabsTrigger value="templates">Premium Projects</TabsTrigger>
-        </TabsList>
-        <TabsContent value="projects">
-        <Projects repos={repos} />
-        </TabsContent >
-        <TabsContent value="templates">
-          <TemplateList />
-        </TabsContent>
-      </Tabs>
-
-    </div>
+      <div className="py-20 md:mx-28">
+        <div className="container p-4 mx-auto">
+          <Tabs defaultValue="projects" className="w-full mx-auto mb-10">
+            <div className="flex justify-center mb-8">
+              <TabsList>
+                <TabsTrigger value="projects">Open Source</TabsTrigger>
+                <TabsTrigger value="templates">Premium Projects</TabsTrigger>
+              </TabsList>
+            </div>
+            <TabsContent value="projects">
+              <Projects repos={repos} />
+            </TabsContent>
+            <TabsContent value="templates">
+              <TemplateList />
+            </TabsContent>
+          </Tabs>
+        </div>
+      </div>
     </div>
   );
 }

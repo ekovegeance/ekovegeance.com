@@ -14,11 +14,12 @@ import {
   CommandShortcut,
 } from "@/components/ui/command";
 import Link from "next/link";
+import { useEffect } from 'react';
 
 export function CommandDialogDemo() {
   const [open, setOpen] = React.useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const down = (e) => {
       if (e.key === "e" && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
@@ -39,9 +40,9 @@ export function CommandDialogDemo() {
         </kbd>
       </p> */}
       <CommandDialog open={open} onOpenChange={setOpen}>
-        <CommandInput placeholder="Ketikkan perintah atau cari..." />
+        <CommandInput placeholder="Type a command or search..." />
         <CommandList>
-          <CommandEmpty>Tidak ada hasil yang ditemukan.</CommandEmpty>
+          <CommandEmpty>No results found.</CommandEmpty>
           <CommandGroup heading="Paths">
             <Link href="/bio">
               <CommandItem>
@@ -61,6 +62,12 @@ export function CommandDialogDemo() {
                 <span>Books</span>
               </CommandItem>
             </Link>
+            <Link href="/certificates">
+              <CommandItem>
+                <SquareMousePointer className="w-4 h-4 mr-2" />
+                <span>Certificates</span>
+              </CommandItem>
+            </Link>
           </CommandGroup>
           <CommandSeparator />
           <CommandGroup heading="Links">
@@ -75,12 +82,6 @@ export function CommandDialogDemo() {
                 <Link2 className="w-4 h-4 mr-2" />
                 <span>Write up</span>
                 {/* <CommandShortcut>⌘B</CommandShortcut> */}
-              </CommandItem>
-            </Link>
-            <Link href="https://certificate.ekovegeance.com/">
-              <CommandItem>
-                <Link2 className="w-4 h-4 mr-2" />
-                <span>Sertificate</span>
               </CommandItem>
             </Link>
             <Link href="https://status.ekovegeance.com/">

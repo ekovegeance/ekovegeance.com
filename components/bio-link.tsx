@@ -5,7 +5,7 @@
  */
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import Link from "next/link";
-import { Github, Linkedin, Globe, Rss } from 'lucide-react';
+import { Github, Linkedin, Globe, Rss } from "lucide-react";
 import { getData } from "@/lib/data";
 
 export default function BioLink() {
@@ -23,9 +23,8 @@ export default function BioLink() {
             <p className="text-muted-foreground">{datas.username}</p>
           </div>
           <p className="text-muted-foreground text-sm max-w-[300px] text-center">
-            Saya seorang Designer & software engineer, membangun produk inovatif.
-            Lihat tautan saya di bawah untuk mempelajarinya lebih banyak tentang
-            saya dan pekerjaan saya.
+            I am a Designer & software engineer, building innovative products.
+            Check out my links below to learn more about me and my work.
           </p>
         </div>
         <div className="grid gap-4">
@@ -66,4 +65,3 @@ export default function BioLink() {
     </div>
   );
 }
-

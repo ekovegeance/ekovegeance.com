@@ -65,25 +65,25 @@ export default function TemplateDetail({
 
             <div className="pt-4 mx-4 space-y-4">
               <div className="flex justify-between py-2">
-                <span className="text-gray-600">Framework</span>
+                <span>Framework</span>
                 <span>{framework}</span>
               </div>
-              <div className="border-t border-gray-200"></div>
+              <div className="border-t border-zinc-400"></div>
 
               <div className="flex justify-between py-2">
-                <span className="text-gray-600">Tech Stack</span>
+                <span>Tech Stack</span>
                 <span>{techStack}</span>
               </div>
-              <div className="border-t border-gray-200"></div>
+              <div className="border-t border-zinc-400"></div>
 
               <div className="flex justify-between py-2">
-                <span className="text-gray-600">Use Case</span>
+                <span>Use Case</span>
                 <span>{useCase}</span>
               </div>
-              <div className="border-t border-gray-200"></div>
+              <div className="border-t border-zinc-400"></div>
 
               <div className="flex justify-between py-2">
-                <span className="text-gray-600">CSS</span>
+                <span>CSS</span>
                 <span>{css}</span>
               </div>
             </div>
