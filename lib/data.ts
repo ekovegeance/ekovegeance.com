@@ -6,7 +6,8 @@ export function getData() {
         image: "https://avatars.githubusercontent.com/u/26839751?v=4",
         summary:
             "Designer & Software Engineer dengan spesialisasi dalam Web dan Open Source, berpengalaman dalam UI/UX dan Frontend Development. Terampil dalam membuat keputusan tepat di bawah tekanan, dengan fokus pada detail dan penyelesaian proyek tepat waktu. Memiliki pemahaman mendalam tentang teknologi web modern dan berkomitmen pada pengembangan solusi inovatif, efisien, dan berkualitas tinggi. Siap berkontribusi dalam tim dinamis dan berorientasi pada hasil.",
-        email: "me@ekovegeance.com",
+        email: "ekovegeance7@gmail.com",
+        phone: "+62 889 0887 8708",
         address: "Palembang, Indonesia",
         links: {
             website: "www.ekovegeance.com",

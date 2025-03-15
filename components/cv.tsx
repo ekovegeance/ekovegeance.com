@@ -5,6 +5,7 @@
  */
 import Link from "next/link";
 import { getData } from "../lib/data";
+import { PhoneIcon } from "lucide-react";
 
 export default function Cv() {
   const data = getData();
@@ -20,20 +21,20 @@ export default function Cv() {
                   <MailIcon className="inline w-4 h-4 mr-2" />
                   <Link href={`mailto:${data.email}`}>{data.email}</Link>
                 </div>
-                {/* <div>
+                <div>
                   <PhoneIcon className="inline w-4 h-4 mr-2" />
-                  (123) 456-7890
-                </div> */}
+                  {data.phone}
+                </div>
                 <div>
                   <LocateIcon className="inline w-4 h-4 mr-2" />
                   {data.address}
                 </div>
-                <div>
+                {/* <div>
                   <LinkIcon className="inline w-4 h-4 mr-2" />
                   <Link href={`https://${data.links.website}`} prefetch={false}>
                     {data.links.website}
                   </Link>
-                </div>
+                </div> */}
                 <div>
                   <LinkIcon className="inline w-4 h-4 mr-2" />
                   <Link
@@ -172,7 +173,7 @@ export default function Cv() {
 
               <div>
                 <Link
-                  href="https://certificate.ekovegeance.com/"
+                  href="/certificates"
                   className="mb-1 text-xl font-semibold hover:text-teal-700"
                 >
                   Sertifikat dan Penghargaan
