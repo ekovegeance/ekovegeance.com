@@ -10,44 +10,46 @@ import { PhoneIcon } from "lucide-react";
 export default function Cv() {
   const data = getData();
   return (
-    <div className="bg-background text-foreground font-inter">
-      <div className="container max-w-4xl px-4 py-12 mx-auto sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+    <div className="bg-background text-foreground">
+      <div className="container max-w-4xl px-4 py-12 mx-auto">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div className="col-span-1 md:col-span-1">
             <div className="flex flex-col items-start gap-4">
               <div className="text-4xl font-bold">{data.name}</div>
               <div className="grid gap-2 text-sm text-muted-foreground">
-                <div>
-                  <MailIcon className="inline w-4 h-4 mr-2" />
-                  <Link href={`mailto:${data.email}`}>{data.email}</Link>
+                <div className="flex items-center gap-2">
+                  <MailIcon className="w-4 h-4" />
+                  <Link href={`mailto:${data.email}`}>
+                    <p>{data.email}</p>
+                  </Link>
                 </div>
-                <div>
-                  <PhoneIcon className="inline w-4 h-4 mr-2" />
-                  {data.phone}
+                <div className="flex items-center gap-2">
+                  <PhoneIcon className="w-4 h-4 " />
+                  <p>{data.phone}</p>
                 </div>
-                <div>
-                  <LocateIcon className="inline w-4 h-4 mr-2" />
-                  {data.address}
+                <div className="flex items-center gap-2">
+                  <LocateIcon className="w-4 h-4 " />
+                  <p>{data.address}</p>
                 </div>
                 {/* <div>
-                  <LinkIcon className="inline w-4 h-4 mr-2" />
+                  <LinkIcon className="w-4 h-4 " />
                   <Link href={`https://${data.links.website}`} prefetch={false}>
-                    {data.links.website}
+                    <p>{data.links.website}</p>
                   </Link>
                 </div> */}
-                <div>
-                  <LinkIcon className="inline w-4 h-4 mr-2" />
+                <div className="flex items-center gap-2">
+                  <LinkIcon className="w-4 h-4 " />
                   <Link
                     href={`https://www.${data.links.linkedin}`}
                     prefetch={false}
                   >
-                    {data.links.linkedin}
+                    <p>{data.links.linkedin}</p>
                   </Link>
                 </div>
-                <div>
-                  <LinkIcon className="inline w-4 h-4 mr-2" />
+                <div className="flex items-center gap-2">
+                  <LinkIcon className="w-4 h-4 " />
                   <Link href={`https://${data.links.github}`} prefetch={false}>
-                    {data.links.github}
+                    <p>{data.links.github}</p>
                   </Link>
                 </div>
               </div>
@@ -57,7 +59,7 @@ export default function Cv() {
             <div className="grid gap-8">
               <div>
                 <div className="mb-2 text-xl font-bold">
-                  Ringkasan Profesional
+                  Profil Singkat
                 </div>
                 <p className="text-muted-foreground">{data.summary}</p>
               </div>
@@ -78,7 +80,7 @@ export default function Cv() {
                             {edu.field} | {edu.date}
                           </div>
                           <div className="text-sm text-muted-foreground">
-                            {edu.gpa && "IPK: " + edu.gpa}
+                            {edu.gpa && "GPA: " + edu.gpa}
                           </div>
                         </Link>
                       </div>
