@@ -218,7 +218,7 @@ export function getTemplates(){
             slug: "financly",
             price: 500000,
             demo: "https://financly.laravel.cloud/",
-            buy: "https://buy.com",
+            buy: "https://api.whatsapp.com/send?phone=6288908878708&text=Halo%20saya%20tertarik%20dengan%20Financly.%20Bisa%20beri%20tahu%20lebih%20lanjut%3F",
             framework: "Laravel",
             techStack: "Laravel 12, React 19",
             useCase: "Finance",
