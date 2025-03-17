@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="flex flex-col items-center justify-around gap-8 px-12 border-zinc-200/70 border-y md:px-6 md:flex-row dark:border-zinc-700/70">
           <div className="space-y-4 text-center md:text-left ">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-primary">
-              Halo, Saya Eko Saputra
+              Hi, I&apos;m Eko Saputra
             </h1>
 
             {/* <Name name="Hi, Saya Eko Saputra" /> */}

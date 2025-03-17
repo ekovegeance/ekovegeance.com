@@ -15,8 +15,8 @@ export default function Book() {
     <div className="w-full max-w-3xl px-4 py-8 mx-auto md:px-6 md:py-12">
       <div className="grid gap-8">
         <div className="grid gap-2">
-          <h1 className="text-3xl font-bold">Daftar Bacaan Saya</h1>
-          <p className="text-muted-foreground">Koleksi buku yang saya baca</p>
+          <h1 className="text-3xl font-bold">My Reading List</h1>
+          <p className="text-muted-foreground">Collection of books that I read</p>
         </div>
         <div className="grid gap-6">
           <div className="grid gap-4">

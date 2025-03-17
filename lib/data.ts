@@ -168,42 +168,42 @@ export function getBooks() {
             author: "Adam Wathan & Steve Schoger",
             genre: "Learning",
             description:
-                "Panduan praktis untuk membangun tampilan antarmuka yang lebih baik dan lebih menarik.",
+                "A practical guide to building better, more engaging user interfaces.",
         },
         {
             title: "Atomic Habits",
             author: "James Clear",
             genre: "Self-help",
             description:
-                "Panduan praktis untuk membangun kebiasaan baik dan menghentikan kebiasaan buruk yang, berdasarkan penelitian terbaru di bidang psikologi dan ilmu saraf.",
+                "A practical guide to building good habits and breaking bad ones, based on the latest research in psychology and neuroscience.",
         },
         {
             title: "Debian GNU/Linux Bible",
             author: "Debian",
             genre: "Learning",
             description:
-                "Debian GNU/Linux adalah salah satu distribusi Linux utama yang tersedia saat ini. Distribusi ini dikenal sebagai distribusi Linux yang paling terbuka -- karena komitmennya terhadap prinsip-prinsip perangkat lunak open source.",
+                "Debian GNU/Linux is one of the major Linux distributions available today. It is known as the most open Linux distribution -- due to its commitment to the principles of open source software.",
         },
         {
             title: "Linux From Scratch",
             author: "Gerard Beekmans",
             genre: "Learning",
             description:
-                "Buku ini memberikan petunjuk kepada pembaca tentang cara membangun sistem Linux dari awal.",
+                "This book provides readers with instructions on how to build a Linux system from scratch.",
         },
         {
             title: "Pro Git",
             author: "Scott Chacon, Ben Straub",
             genre: "Learning",
             description:
-                "Git adalah sistem kontrol versi yang dikembangkan oleh Linus Torvalds untuk pengembangan kernel Linux. Hal ini menggemparkan dunia open source sejak didirikan pada tahun 2005.",
+                "Git is a version control system developed by Linus Torvalds for Linux kernel development. It has taken the open source world by storm since its inception in 2005.",
         },
         {
             title: "Tenggelamnya Kapal Van Der Wijck",
             author: "Hamka",
             genre: "Novel",
             description:
-                "Berlatar belakang kehidupan di Minangkabau, tanah asal Buya Hamka, dengan masalah adat yang berlaku pada saat itu perihal warisan, perjodohan dan kawin paksa, serta pertalian darah dan status sosial yang sangat kuat berakar.",
+                "The background is life in Minangkabau, Buya Hamka's homeland, with customary issues prevailing at that time regarding inheritance, arranged marriages and forced marriages, as well as blood ties and social status which are very deeply rooted.",
         }
     ];
     return books;
