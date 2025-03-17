@@ -5,87 +5,66 @@
  */
 import Link from "next/link";
 import { getData } from "../lib/data";
-import { PhoneIcon } from "lucide-react";
+import { PhoneIcon, Linkedin, Mail, Locate } from "lucide-react";
 
 export default function Cv() {
   const data = getData();
   return (
     <div className="bg-background text-foreground">
       <div className="container max-w-4xl px-4 py-12 mx-auto">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div className="col-span-1 md:col-span-1">
-            <div className="flex flex-col items-start gap-4">
-              <div className="text-4xl font-bold">{data.name}</div>
-              <div className="grid gap-2 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <MailIcon className="w-4 h-4" />
-                  <Link href={`mailto:${data.email}`}>
-                    <p>{data.email}</p>
-                  </Link>
-                </div>
-                <div className="flex items-center gap-2">
-                  <PhoneIcon className="w-4 h-4 " />
-                  <p>{data.phone}</p>
-                </div>
-                <div className="flex items-center gap-2">
-                  <LocateIcon className="w-4 h-4 " />
-                  <p>{data.address}</p>
-                </div>
-                {/* <div>
-                  <LinkIcon className="w-4 h-4 " />
-                  <Link href={`https://${data.links.website}`} prefetch={false}>
-                    <p>{data.links.website}</p>
-                  </Link>
-                </div> */}
-                <div className="flex items-center gap-2">
-                  <LinkIcon className="w-4 h-4 " />
-                  <Link
-                    href={`https://www.${data.links.linkedin}`}
-                    prefetch={false}
-                  >
-                    <p>{data.links.linkedin}</p>
-                  </Link>
-                </div>
-                <div className="flex items-center gap-2">
-                  <LinkIcon className="w-4 h-4 " />
-                  <Link href={`https://${data.links.github}`} prefetch={false}>
-                    <p>{data.links.github}</p>
-                  </Link>
-                </div>
-              </div>
+        <div className="flex flex-col gap-4 mb-12">
+          <div className="text-4xl font-bold">{data.name}</div>
+          <div className="flex flex-col md:flex-row gap-2 md:gap-4 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2">
+              <Mail className="w-4 h-4" />
+              <Link href={`mailto:${data.email}`}>
+                <p>{data.email}</p>
+              </Link>
+            </div>
+            <div className="flex items-center gap-2">
+              <PhoneIcon className="w-4 h-4" />
+              <p>{data.phone}</p>
+            </div>
+            <div className="flex items-center gap-2">
+              <Locate className="w-4 h-4" />
+              <p>{data.address}</p>
+            </div>
+            <div className="flex items-center gap-2">
+              <Linkedin className="w-4 h-4" />
+              <Link href={`https://${data.links.linkedin}`}>
+                <p>{data.links.linkedin}</p>
+              </Link>
             </div>
           </div>
+        </div>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div className="col-span-2 md:col-span-2">
             <div className="grid gap-8">
               <div>
-                <div className="mb-2 text-xl font-bold">
-                  Profil Singkat
-                </div>
+                <div className="mb-2 text-xl font-bold">Profil Singkat</div>
                 <p className="text-muted-foreground">{data.summary}</p>
               </div>
               <div>
                 <div className="mb-2 text-xl font-bold">Pendidikan</div>
-                <div className="grid gap-4">
-                  <div>
-                    {data.education.map((edu, index) => (
-                      <div key={index} className="mb-4">
-                        <Link href={edu.link}>
-                          <div className="mb-1 text-lg font-semibold hover:text-teal-700">
-                            {edu.institution}
-                          </div>
-                          <div className="text-sm text-muted-foreground">
-                            {edu.degree}
-                          </div>
-                          <div className="text-sm text-muted-foreground">
-                            {edu.field} | {edu.date}
-                          </div>
-                          <div className="text-sm text-muted-foreground">
-                            {edu.gpa && "GPA: " + edu.gpa}
-                          </div>
-                        </Link>
-                      </div>
-                    ))}
-                  </div>
+                <div className="flex flex-col md:flex-row gap-4 md:gap-20">
+                  {data.education.map((edu, index) => (
+                    <div key={index}>
+                      <Link href={edu.link}>
+                        <div className="mb-1 text-md font-semibold hover:text-teal-700">
+                          {edu.institution}
+                        </div>
+                        <div className="text-sm text-muted-foreground">
+                          {edu.degree}
+                        </div>
+                        <div className="text-sm text-muted-foreground">
+                          {edu.field} | {edu.date}
+                        </div>
+                        <div className="text-sm text-muted-foreground">
+                          {edu.gpa && "GPA: " + edu.gpa}
+                        </div>
+                      </Link>
+                    </div>
+                  ))}
                 </div>
               </div>
               <div>
@@ -93,26 +72,28 @@ export default function Cv() {
                 <div className="mb-2 text-xl font-bold">
                   Pengalaman Organisasi
                 </div>
-                {data.organizations.map((org, index) => (
-                  <div key={index} className="mb-4">
-                    <div>
-                      <Link href={org.link}>
-                        <div className="mb-1 text-lg font-semibold hover:text-teal-700">
-                          {org.organization}
-                        </div>
-                        <div className="text-sm text-muted-foreground">
-                          {org.position} | {org.date}
-                        </div>
-                        {/* <div className="text-muted-foreground">
+                <div className="flex flex-col md:flex-row gap-4 md:gap-36">
+                  {data.organizations.map((org, index) => (
+                    <div key={index} className="mb-4">
+                      <div>
+                        <Link href={org.link}>
+                          <div className="mb-1 text-md font-semibold hover:text-teal-700">
+                            {org.organization}
+                          </div>
+                          <div className="text-sm text-muted-foreground">
+                            {org.position} | {org.date}
+                          </div>
+                          {/* <div className="text-muted-foreground">
                           {org.description}
                         </div> */}
-                        {/* <div className="text-sm text-muted-foreground">
+                          {/* <div className="text-sm text-muted-foreground">
                       {org.location} | {org.date}
                     </div> */}
-                      </Link>
+                        </Link>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
 
               <div>
@@ -121,7 +102,7 @@ export default function Cv() {
                   <div key={index}>
                     <div>
                       <Link href={exp.link}>
-                        <div className="mt-4 mb-1 text-lg font-semibold hover:text-teal-700">
+                        <div className="mt-4 mb-1 text-md font-semibold hover:text-teal-700">
                           {exp.title}
                         </div>
                         <div className="text-sm text-muted-foreground">
@@ -185,7 +166,7 @@ export default function Cv() {
                     key={index}
                     className="mt-2 list-disc ms-4 text-muted-foreground"
                   >
-                    <li>
+                    <li className="text-md">
                       {certificate.title} - {certificate.issuer} (
                       {certificate.date})
                     </li>
@@ -211,68 +192,5 @@ export default function Cv() {
         </div>
       </div>
     </div>
-  );
-}
-
-function LinkIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-    </svg>
-  );
-}
-
-function LocateIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <line x1="2" x2="5" y1="12" y2="12" />
-      <line x1="19" x2="22" y1="12" y2="12" />
-      <line x1="12" x2="12" y1="2" y2="5" />
-      <line x1="12" x2="12" y1="19" y2="22" />
-      <circle cx="12" cy="12" r="7" />
-    </svg>
-  );
-}
-
-function MailIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <rect width="20" height="16" x="2" y="4" rx="2" />
-      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-    </svg>
   );
 }
