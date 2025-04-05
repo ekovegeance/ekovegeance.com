@@ -22,7 +22,7 @@ export default function Certificates() {
             
             <Card
               key={certificate.id}
-              className="overflow-hidden shadow-none border-border hover:shadow-sm"
+              className="overflow-hidden shadow-none border-border hover:shadow-xs"
             >
               <Link href={certificate.url}>
               <CardContent className="p-6 ">
