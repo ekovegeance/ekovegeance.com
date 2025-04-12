@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Name } from "./motion/name";
 import { TextLoop } from "./ui/text-loop";
 
 export default function Hero() {
