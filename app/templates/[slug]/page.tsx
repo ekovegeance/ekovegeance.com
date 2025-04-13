@@ -11,7 +11,7 @@ export default async function TemplatesSlugPage({
   const templates = getTemplates();
   console.log(slug);
   return (
-    <div className="container mx-auto min-h-svh border-zinc-200/70 dark:border-zinc-700/70 border-x">
+    <div className="container mx-auto min-h-svh border-primary-foreground max-w-7xl border-x">
       {templates.map((template, index) => {
         console.log(template.slug);
         if (template.slug === slug) {

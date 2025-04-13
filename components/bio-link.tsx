@@ -11,7 +11,7 @@ import { getData } from "@/lib/data";
 export default function BioLink() {
   const datas = getData();
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-background text-foreground">
+    <div className="flex flex-col items-center justify-center min-h-svh bg-background text-foreground">
       <div className="w-full max-w-md px-6 py-12 space-y-6">
         <div className="flex flex-col items-center space-y-4">
           <Avatar className="w-24 h-24 rounded-md">

@@ -19,9 +19,9 @@ type templateDetailProps = {
 };
 export default function TemplateDetail({ template}: { template: templateDetailProps }) {
   return (
-    <div className="">
+    <section className="">
       {/* Main Content */}
-      <div className="container px-4 py-8 mx-auto md:px-48">
+      <div className="px-6 py-8 mx-auto">
         <div className="grid gap-14 md:grid-cols-2">
           {/* Left Column */}
           <div className="space-y-6">
@@ -56,19 +56,19 @@ export default function TemplateDetail({ template}: { template: templateDetailPr
                 <span>Framework</span>
                 <span>{template.framework}</span>
               </div>
-              <div className="border-t border-zinc-400"></div>
+              <div className="border-t border-primary-foreground"></div>
 
               <div className="flex justify-between py-2">
                 <span>Tech Stack</span>
                 <span>{template.techStack}</span>
               </div>
-              <div className="border-t border-zinc-400"></div>
+              <div className="border-t border-primary-foreground"></div>
 
               <div className="flex justify-between py-2">
                 <span>Use Case</span>
                 <span>{template.useCase}</span>
               </div>
-              <div className="border-t border-zinc-400"></div>
+              <div className="border-t border-primary-foreground"></div>
 
               <div className="flex justify-between py-2">
                 <span>CSS</span>
@@ -105,6 +105,6 @@ export default function TemplateDetail({ template}: { template: templateDetailPr
 
         </div>
       </div>
-    </div>
+    </section>
   );
 }

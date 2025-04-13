@@ -8,15 +8,13 @@ export default function Hero() {
     <div>
       <section
         id="hero"
-        className="w-full py-12 border-b border-zinc-200/70 dark:border-zinc-700/70 md:py-24 lg:py-32"
+        className="w-full py-12 border-b border-primary-foreground md:py-24 lg:py-32"
       >
-        <div className="flex flex-col items-center justify-around gap-8 px-12 border-zinc-200/70 border-y md:px-6 md:flex-row dark:border-zinc-700/70">
+        <div className="flex flex-col items-center justify-between gap-8 px-12 border-primary-foreground border-y md:px-6 md:flex-row ">
           <div className="space-y-4 text-center md:text-left ">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-primary">
               Hi, I&apos;m Eko Saputra
             </h1>
-
-            {/* <Name name="Hi, Saya Eko Saputra" /> */}
             <TextLoop className="flex max-w-[500px] text-muted-foreground md:text-xl">
               <p>Designer</p>
               <p>Software Engineer</p>
