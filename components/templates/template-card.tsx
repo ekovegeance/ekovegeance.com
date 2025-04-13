@@ -20,7 +20,7 @@ export default function TemplateCard({ title, description, image, link }: Templa
   return (
     <div className="">
         <Link href={link}>
-      <Card className="transition duration-300 ease-in-out shadow-none  hover:shadow-sm">
+      <Card className="transition duration-300 ease-in-out shadow-none  hover:shadow-xs">
         <CardHeader>
           <Image
             src={image}

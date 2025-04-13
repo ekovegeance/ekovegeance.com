@@ -8,7 +8,7 @@ export default async function ProjectsPage() {
   const repos = await data.json();
 
   return (
-    <div className="container mx-auto min-h-svh border-zinc-200/70 dark:border-zinc-700/70 border-x ">
+    <div className="mx-auto min-h-svh border-primary-foreground border-x ">
       <div className="py-8 md:mx-28">
         <div className="container p-4 mx-auto">
           <Tabs defaultValue="projects" className="w-full mx-auto mb-10">

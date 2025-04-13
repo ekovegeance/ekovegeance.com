@@ -17,23 +17,11 @@ type templateDetailProps = {
   demo: string;
   buy: string;
 };
-export default function TemplateDetail({
-  title,
-  description,
-  image,
-  price,
-  framework,
-  techStack,
-  useCase,
-  css,
-  features,
-  demo,
-  buy,
-}: templateDetailProps) {
+export default function TemplateDetail({ template}: { template: templateDetailProps }) {
   return (
-    <div className="">
+    <section className="">
       {/* Main Content */}
-      <div className="container px-4 py-8 mx-auto md:px-48">
+      <div className="px-6 py-8 mx-auto">
         <div className="grid gap-14 md:grid-cols-2">
           {/* Left Column */}
           <div className="space-y-6">
@@ -46,17 +34,17 @@ export default function TemplateDetail({
             </Link>
 
             <div className="space-y-2">
-              <h1 className="text-xl font-bold">{title}</h1>
+              <h1 className="text-xl font-bold">{template.title}</h1>
               <p className="text-3xl font-extrabold text-teal-700">
-                Rp. {new Intl.NumberFormat("id-ID").format(price)}
+                Rp. {new Intl.NumberFormat("id-ID").format(template.price)}
               </p>
             </div>
 
             <div className="flex items-center gap-4">
-              <Link href={buy}>
+              <Link href={template.buy}>
                 <Button>Buy Now</Button>
               </Link>
-              <Link href={demo}>
+              <Link href={template.demo}>
                 <Button variant="secondary">
                   View Demo
                 </Button>
@@ -66,25 +54,25 @@ export default function TemplateDetail({
             <div className="pt-4 mx-4 space-y-4">
               <div className="flex justify-between py-2">
                 <span>Framework</span>
-                <span>{framework}</span>
+                <span>{template.framework}</span>
               </div>
-              <div className="border-t border-zinc-400"></div>
+              <div className="border-t border-primary-foreground"></div>
 
               <div className="flex justify-between py-2">
                 <span>Tech Stack</span>
-                <span>{techStack}</span>
+                <span>{template.techStack}</span>
               </div>
-              <div className="border-t border-zinc-400"></div>
+              <div className="border-t border-primary-foreground"></div>
 
               <div className="flex justify-between py-2">
                 <span>Use Case</span>
-                <span>{useCase}</span>
+                <span>{template.useCase}</span>
               </div>
-              <div className="border-t border-zinc-400"></div>
+              <div className="border-t border-primary-foreground"></div>
 
               <div className="flex justify-between py-2">
                 <span>CSS</span>
-                <span>{css}</span>
+                <span>{template.css}</span>
               </div>
             </div>
           </div>
@@ -93,8 +81,8 @@ export default function TemplateDetail({
           <div>
             <div className="p-8 mb-8 bg-white border border-gray-200 rounded-lg">
               <Image
-                src={image}
-                alt={title}
+                src={template.image}
+                alt={template.title}
                 height={1000}
                 width={1000}
                 className="object-cover w-full "
@@ -104,10 +92,10 @@ export default function TemplateDetail({
 
             <div className="space-y-4">
               <h3 className="text-xl font-bold">Description</h3>
-              <p>{description}</p>
+              <p>{template.description}</p>
 
               <h3 className="text-xl font-bold">Features</h3>
-              {features.map((feature, index) => (
+              {template.features.map((feature, index) => (
                 <div key={index} className="flex items-center space-x-2">
                   <span className="text-teal-700">•</span>
                   <span>{feature}</span>
@@ -117,6 +105,6 @@ export default function TemplateDetail({
 
         </div>
       </div>
-    </div>
+    </section>
   );
 }

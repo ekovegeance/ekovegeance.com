@@ -5,7 +5,6 @@ import { CommandDialogDemo } from "@/components/command";
 export default function Bio() {
   return (
     <div>
-      <CommandDialogDemo/>
       <BioLink />
     </div>
   );

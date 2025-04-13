@@ -31,7 +31,7 @@ export default function GoogleSearchRedirect() {
                 placeholder="Mau cari apa?"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                className="flex-grow"
+                className="grow"
                 required
               />
               <Button type="submit">Cari</Button>

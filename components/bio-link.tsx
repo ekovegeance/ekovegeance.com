@@ -11,7 +11,7 @@ import { getData } from "@/lib/data";
 export default function BioLink() {
   const datas = getData();
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-background text-foreground">
+    <div className="flex flex-col items-center justify-center min-h-svh bg-background text-foreground">
       <div className="w-full max-w-md px-6 py-12 space-y-6">
         <div className="flex flex-col items-center space-y-4">
           <Avatar className="w-24 h-24 rounded-md">
@@ -30,7 +30,7 @@ export default function BioLink() {
         <div className="grid gap-4">
           <Link
             href="https://www.ekovegeance.com"
-            className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium transition-colors rounded-md shadow bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+            className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium transition-colors rounded-md shadow-sm bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
             prefetch={false}
           >
             <Globe className="w-5 h-5" />
@@ -38,7 +38,7 @@ export default function BioLink() {
           </Link>
           <Link
             href="https://blog.ekovegeance.com"
-            className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium transition-colors rounded-md shadow bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+            className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium transition-colors rounded-md shadow-sm bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
             prefetch={false}
           >
             <Rss className="w-5 h-5" />
@@ -46,7 +46,7 @@ export default function BioLink() {
           </Link>
           <Link
             href="https://www.linkedin.com/in/ekovegeance/"
-            className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium transition-colors rounded-md shadow bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+            className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium transition-colors rounded-md shadow-sm bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
             prefetch={false}
           >
             <Linkedin className="w-5 h-5" />
@@ -54,7 +54,7 @@ export default function BioLink() {
           </Link>
           <Link
             href="https://github.com/ekovegeance"
-            className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium transition-colors rounded-md shadow bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+            className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium transition-colors rounded-md shadow-sm bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
             prefetch={false}
           >
             <Github className="w-5 h-5" />

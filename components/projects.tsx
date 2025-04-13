@@ -78,7 +78,7 @@ export default function Projects({ repos }: { repos: Repository[] }) {
       new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime()
   );
   return (
-    <div className="w-full p-4 mx-auto divide-y md:max-w-4xl divide-border">
+    <div className="w-full p-4 mx-auto divide-y md:max-w-7xl divide-border">
       {sortedRepos.map((repo) => (
         <div
           key={repo.id}
