@@ -1,55 +1,8 @@
 import { CircleDot, GitFork, Star } from "lucide-react";
 import Link from "next/link";
 import clsx from "clsx";
+import {Repository} from "@/types";
 
-interface Repository {
-  id: string;
-  name: string;
-  description: string;
-  language: string;
-  languageColor: string;
-  stargazers_count: number;
-  forks: number;
-  updated_at: string;
-  is_template: boolean;
-  html_url: string;
-}
-
-// const repositories: Repository[] = [
-//   {
-//     id: "1",
-//     name: "next.js",
-//     description: "The React Framework for the Web. Follow @nextjs on Twitter to stay updated",
-//     language: "JavaScript",
-//     languageColor: "#f1e05a",
-//     stars: 115232,
-//     forks: 24891,
-//     updatedAt: "Updated 2 days ago",
-//     isPrivate: false,
-//   },
-//   {
-//     id: "2",
-//     name: "react",
-//     description: "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
-//     language: "TypeScript",
-//     languageColor: "#3178c6",
-//     stars: 215234,
-//     forks: 45678,
-//     updatedAt: "Updated yesterday",
-//     isPrivate: false,
-//   },
-//   {
-//     id: "3",
-//     name: "internal-tools",
-//     description: "Internal development tools and utilities for the team",
-//     language: "TypeScript",
-//     languageColor: "#3178c6",
-//     stars: 12,
-//     forks: 3,
-//     updatedAt: "Updated 5 days ago",
-//     isPrivate: true,
-//   },
-// ]
 
 const languageColors = {
   javascript: "#f1e05a",

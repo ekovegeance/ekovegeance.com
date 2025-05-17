@@ -1,4 +1,6 @@
 // Simulate fetching data from an API
+import {Github, Globe, Linkedin} from "lucide-react";
+
 export function getData() {
     const data = {
         name: "Eko Saputra",
@@ -113,52 +115,79 @@ export function getData() {
         certificates: [
             {
                 title: "Alibaba Cloud Certified Developer",
-                issuer: "Alibaba Cloud Academy",
+                organization: "Alibaba Cloud Academy",
                 date: "2023",
             },
             {
                 title: "1st Palembang Business Plan Award",
-                issuer: "ITI",
+                organization: "ITI",
                 date: "2022",
             },
             {
                 title: "Pre Security Learning Path",
-                issuer: "TryHackMe",
+                organization: "TryHackMe",
                 date: "2022",
             },
             {
                 title: "Memulai Pemrograman Dengan Python",
-                issuer: "Dicoding Indonesia",
+                organization: "Dicoding Indonesia",
                 date: "2021",
             },
             {
                 title: "Belajar Dasar Visualisasi Data",
-                issuer: "Dicoding Indonesia",
+                organization: "Dicoding Indonesia",
                 date: "2021",
             },
             {
                 title: "Introduction to Networks",
-                issuer: "Cisco NetAcad",
+                organization: "Cisco NetAcad",
                 date: "2021",
             },
             {
                 title: "Cloud Practitioner Essentials",
-                issuer: "Dicoding Indonesia",
+                organization: "Dicoding Indonesia",
                 date: "2021",
             },
             {
                 title: "Switching, Routing, and Wireless Essentials",
-                issuer: "Cisco NetAcad",
+                organization: "Cisco NetAcad",
                 date: "2020",
             },
             {
                 title: "Fundamentals of Digital Marketing",
-                issuer: "Google",
+                organization: "Google",
                 date: "2019",
             },
         ]
     };
     return data;
+}
+
+export function getBio() {
+    const bio = {
+        name: "Eko Saputra",
+        username: "ekovegeance",
+        image: "https://avatars.githubusercontent.com/u/26839751?v=4",
+        description: "I am a Designer & software engineer, building innovative products. Check out my links below to learn more about me and my work.",
+        sites: [
+            {
+                title: "Website",
+                link: "https://www.ekovegeance.com",
+                icon: Globe,
+            },
+            {
+                title: "LinkedIn",
+                link: "https://www.linkedin.com/in/ekovegeance/",
+                icon: Linkedin,
+            },
+            {
+                title: "GitHub",
+                link: "https://www.github.com/ekovegeance",
+                icon: Github,
+            },
+        ]
+    }
+    return bio;
 }
 
 export function getBooks() {
@@ -240,7 +269,6 @@ export function getCertificates() {
 
     const certificates = [
         {
-          id: 1,
           title: "Memulai Pemrogram Dengan Python",
           organization: "Dicoding Indonesia",
           date: "Jul 2021",
@@ -250,7 +278,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/1DrXmTvJyE06JJoR_V3pitovBu4sVT3eO/view?usp=sharing",
         },
         {
-          id: 2,
           title: "Belajar Dasar AWS Cloud",
           organization: "Dicoding Indonesia",
           date: "Jul 2021",
@@ -260,7 +287,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/1E95Dz7iD-0gTqCsME-ZqL9k3WZgMi2Eh/view?usp=sharing",
         },
         {
-          id: 3,
           title: "Belajar Dasar Visualisasi Data",
           organization: "Dicoding Indonesia",
           date: "Jul 2021",
@@ -270,7 +296,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/1HwZzZjIbuD6TYuhjo7hgYyXMTF7VNbXO/view?usp=sharing",
         },
         {
-          id: 4,
           title: "CCNAv7: Introduction to Networks",
           organization: "Cisco NetAcad",
           date: "Jun 2021",
@@ -280,7 +305,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/1aWTd4-rnQ2QbLs15Q3OZkIGQnt_vwTPK/view?usp=sharing",
         },
         {
-          id: 5,
           title: "CCNAv7: Switching, Routing, and Wireless Essentials",
           organization: "Cisco NetAcad",
           date: "Jul 2022",
@@ -290,7 +314,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/1fdTanfcqAKxBQz-RLWgy_AYS_i0OTBH4/view?usp=sharing",
         },
         {
-          id: 6,
           title: "Google Digital Marketing",
           organization: "Google",
           date: "Jul 2022",
@@ -300,7 +323,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/14xlm3x0TLf50rhWyDjdIhwRBwR8ZBgEo/view?usp=sharing",
         },
         {
-          id: 7,
           title: "Pre Security Learning Path",
           organization: "TryHackMe",
           date: "Jul 2022",
@@ -310,7 +332,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/1i21ToVxzR64Au8DpjtHQd8Cmv1CBwzwx/view?usp=sharing",
         },
         {
-          id: 8,
           title: "1st Palembang Business Plan Award",
           organization: "DIIB Univ Bina Darma",
           date: "Jun 2022",
@@ -320,7 +341,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/1QU8YHB9Khy9aCa8tjHFnPzpWBkD40po6/view?usp=sharing",
         },
         {
-          id: 9,
           title: "1st Palembang Business Plan Award",
           organization: "DIIB Univ Bina Darma",
           date: "Jun 2022",
@@ -330,7 +350,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/1QU8YHB9Khy9aCa8tjHFnPzpWBkD40po6/view?usp=sharing",
         },
         {
-          id: 10,
           title: "Certified Developer",
           organization: "Alibaba Cloud Academy",
           date: "Des 2023",
@@ -340,7 +359,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/1y05Xvy0DStAdJukmD4Pf0IEllDS-tmK2/view?usp=sharing",
         },
         {
-          id: 11,
           title: "Beginner's Guide to MySQL",
           organization: "Alibaba Cloud Academy",
           date: "Des 2023",
@@ -350,7 +368,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/1TxTuyDtlYhtz2fAj-OHxlLqIomYUAOfh/view?usp=sharing",
         },
         {
-          id: 12,
           title: "Beginner's Guide to MySQL",
           organization: "Alibaba Cloud Academy",
           date: "Des 2023",
@@ -360,7 +377,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/1TxTuyDtlYhtz2fAj-OHxlLqIomYUAOfh/view?usp=sharing",
         },
         {
-          id: 13,
           title: "Alibaba Cloud DataWorks-Basic Knowledge",
           organization: "Alibaba Cloud Academy",
           date: "Des 2023",
@@ -370,7 +386,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/1ye4mcHmo0uMXwYQcA-fLz2sxzyxGAYn-/view?usp=sharing",
         },
         {
-          id: 14,
           title: "Dasar HTML",
           organization: "Codepolitan",
           date: "Des 2023",
@@ -380,7 +395,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/1YjpVljqP3OL6hozHHUdGKOZrxwhJ69B_/view?usp=sharing",
         },
         {
-          id: 15,
           title: "Bootstrap CSS Framework",
           organization: "Codepolitan",
           date: "Des 2023",
@@ -390,7 +404,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/19N-YZ3Mly9TOSVH7njydBiYljmyblBru/view?usp=sharing",
         },
         {
-          id: 16,
           title: "Javascript Fundamental",
           organization: "Codepolitan",
           date: "Des 2023",
@@ -400,7 +413,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/1HAP6-lRzndU_9KZCCCdkqzE2TKcuNsdj/view?usp=sharing",
         },
         {
-          id: 17,
           title: "JavaScript DOM",
           organization: "Codepolitan",
           date: "Des 2023",
@@ -410,7 +422,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/1XwPD5y5Mb4cF8x1XPoHWPbUBhFOWb1E9/view?usp=sharing",
         },
         {
-          id: 18,
           title: "JavaScript Asynchronous",
           organization: "Codepolitan",
           date: "Des 2023",
@@ -420,7 +431,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/186i49Ubqizgu8HMyWGRceNQM2mZQos61/view?usp=sharing",
         },
         {
-          id: 19,
           title: "JavaScript Asynchronous",
           organization: "Codepolitan",
           date: "Mar 2024",
@@ -430,7 +440,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/186i49Ubqizgu8HMyWGRceNQM2mZQos61/view?usp=sharing",
         },
         {
-          id: 20,
           title: "AJAX dan Web API ",
           organization: "Codepolitan",
           date: "Mar 2024",
@@ -440,7 +449,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/1tY4k6hdLgfsaUTkZBTASgHr4Ay9cHtV8/view?usp=sharing",
         },
         {
-          id: 21,
           title: "OOP di JavaScript",
           organization: "Codepolitan",
           date: "Mar 2024",
@@ -450,7 +458,6 @@ export function getCertificates() {
           url: "https://drive.google.com/file/d/1FaIq0bVEUs7qV3rGlmxHPJwuTEw4MsTB/view?usp=sharing",
         },
         {
-          id: 22,
           title: "Desktop Office Training",
           organization: "Universitas Bina Darma",
           date: "Sep 2024",
@@ -459,11 +466,6 @@ export function getCertificates() {
           credential: "09/12/IX/2024",
           url: "https://drive.google.com/file/d/1hQwACCju_dDQCUNmBJTFcFWBdoZYVbz_/view?usp=sharing",
         },
-
-
-
- 
       ];
-
     return certificates;
 }

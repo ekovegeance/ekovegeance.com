@@ -4,13 +4,11 @@
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
 
-
-import { getBooks } from "../lib/data";
 import Link from "next/link";
+import {Book} from "@/types";
 
 
-export default function Book() {
-  const books = getBooks();
+export default function BookList({books} : {books: Book[]}) {
   return (
     <div className="w-full max-w-3xl px-4 py-8 mx-auto md:px-6 md:py-12">
       <div className="grid gap-8">

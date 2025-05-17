@@ -21,6 +21,7 @@
     "@vercel/analytics": "^1.3.1",
     "@vercel/speed-insights": "^1.1.0",
     "autoprefixer": "^10.4.21",
+    "axios": "^1.9.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
@@ -33,8 +34,7 @@
     "react-dom": "19.1.0",
     "stoicss": "^0.1.2",
     "tailwind-merge": "^2.6.0",
-    "tailwindcss-animate": "^1.0.7",
-    "tw-animate-css": "^1.2.5"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.3",
@@ -50,6 +50,7 @@
     "jsdom": "^26.0.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.3",
+    "tw-animate-css": "^1.3.0",
     "typescript": "^5.7.2",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.0.2"

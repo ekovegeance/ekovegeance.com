@@ -1,11 +1,10 @@
 import Projects from "@/components/projects";
 import TemplateList from "@/components/templates/template-list";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import React from "react";
+import { getAllRepos } from "@/lib/data/project";
 
 export default async function ProjectsPage() {
-  const data = await fetch("https://api.github.com/users/ekovegeance/repos");
-  const repos = await data.json();
+const repos = await getAllRepos();
 
   return (
     <div className="mx-auto min-h-svh border-primary-foreground border-x ">
