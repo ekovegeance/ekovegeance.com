@@ -1,5 +1,5 @@
 import React from "react";
-import { getTemplates } from "@/lib/data";
+import { getTemplates } from "@/lib/data/static";
 import TemplateDetail from "@/components/templates/template-detail";
 
 export default async function TemplatesSlugPage({

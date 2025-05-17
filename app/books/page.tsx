@@ -1,12 +1,12 @@
 import React from "react";
-import Book from "@/components/book";
-import { CommandDialogDemo } from "@/components/command";
+import BookList from "@/components/book";
+import {getBooks} from "@/lib/data/static";
 
 export default function BooksPage() {
+    const books = getBooks();
   return (
     <div>
-      <CommandDialogDemo />
-      <Book />
+      <BookList books={books} />
     </div>
   );
 }

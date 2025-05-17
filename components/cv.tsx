@@ -4,11 +4,10 @@
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
 import Link from "next/link";
-import { getData } from "../lib/data";
 import { PhoneIcon, Linkedin, Mail, Locate } from "lucide-react";
+import {Data} from "@/types";
 
-export default function Cv() {
-  const data = getData();
+export default function Cv({data} : {data: Data}) {
   return (
     <div className="bg-background text-foreground">
       <div className="container max-w-4xl px-4 py-12 mx-auto">
@@ -167,7 +166,7 @@ export default function Cv() {
                     className="mt-2 list-disc ms-4 text-muted-foreground"
                   >
                     <li className="text-md">
-                      {certificate.title} - {certificate.issuer} (
+                      {certificate.title} - {certificate.organization} (
                       {certificate.date})
                     </li>
                   </ul>

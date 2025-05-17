@@ -3,12 +3,11 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Calendar, Award } from "lucide-react";
-import { getCertificates } from "@/lib/data";
+import { getCertificates } from "@/lib/data/static";
 import Link from "next/link";
+import {Certificate} from "@/types";
 
-export default function Certificates() {
-  const certificates = getCertificates();
-
+export default function Certificates({certificates}: {certificates: Certificate[]}) {
   return (
     <section id="certificates">
       <div className="px-4 mx-auto">
@@ -17,9 +16,9 @@ export default function Certificates() {
         </h2>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4">
-          {certificates.map((certificate) => (
+          {certificates.map((certificate, index) => (
             <Card
-              key={certificate.id}
+              key={index}
               className="overflow-hidden shadow-none border-border hover:shadow-xs"
             >
               <Link href={certificate.url}>

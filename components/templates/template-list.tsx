@@ -1,5 +1,5 @@
 import React from "react";
-import { getTemplates } from "@/lib/data";
+import { getTemplates } from "@/lib/data/static";
 import TemplateCard from "./template-card";
 
 export default function TemplateList() {
