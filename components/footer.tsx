@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex items-center gap-2 text-xs text-muted-foreground dark:text-card-foreground">
           <Server className="w-4 h-4" />
           <Link href="https://status.ekovegeance.com/">
-            <p className="text-teal-700">System Status: Online</p>
+            <p className="text-teal-800 dark:text-teal-500">System Status: Online</p>
           </Link>
         </div>
         <div>
