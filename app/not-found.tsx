@@ -10,9 +10,9 @@ export default function NotFound() {
     <div className="flex min-h-[100dvh] flex-col items-center justify-center bg-background px-4 py-12 sm:px-6 lg:px-8">
       <div className="max-w-md mx-auto text-center">
         <FrownIcon className="w-12 h-12 mx-auto text-primary" />
-        <h1 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Ups, halaman tidak ditemukan!</h1>
+        <h1 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Oops, page not found!</h1>
         <p className="mt-4 text-muted-foreground">
-        Jangan khawatir, Saya akan membantu Anda menemukan kembali halaman yang Anda cari.
+          Don&#39;t worry, I will help you find the page you are looking for.
         </p>
         <div className="mt-6">
           <Link
@@ -20,7 +20,7 @@ export default function NotFound() {
             className="inline-flex items-center px-4 py-2 text-sm font-medium transition-colors rounded-md shadow-xs bg-primary text-primary-foreground hover:bg-primary/90 focus:outline-hidden focus:ring-2 focus:ring-primary focus:ring-offset-2"
             prefetch={false}
           >
-            Buka Beranda
+            Go back to home
           </Link>
         </div>
       </div>
