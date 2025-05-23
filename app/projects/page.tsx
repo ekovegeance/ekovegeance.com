@@ -2,7 +2,13 @@ import Projects from "@/components/projects";
 import TemplateList from "@/components/templates/template-list";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getAllRepos } from "@/lib/data/project";
+import {Metadata} from "next";
 
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: 'Discover featured web development projects by ekovegeance, including real-world apps, open-source contributions, and client work.'
+}
 export default async function ProjectsPage() {
 const repos = await getAllRepos();
 

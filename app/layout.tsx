@@ -16,7 +16,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "ekovegeance",
+  metadataBase: new URL("https://ekovegeance.vercel.app/"),
+  title: {default: "About ekovegeance", template: "%s | ekovegeance"},
+  keywords: ['Web Developer', 'Next.js Projects', 'Portfolio', 'ekovegeance', 'Frontend Developer'],
   description: "Designer & software engineer",
   icons: {
     icon: "/favicon.svg",
