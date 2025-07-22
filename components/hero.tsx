@@ -12,7 +12,7 @@ export default function Hero() {
       >
         <div className="flex flex-col items-center justify-between gap-8 px-12 border-primary-foreground border-y md:px-6 md:flex-row ">
           <div className="space-y-4 text-center md:text-left ">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-primary">
+            <h1 className="text-2xl font-bold tracking-tight md:text-4xl text-primary">
               Hi, I&apos;m Eko Saputra
             </h1>
             <TextLoop className="flex max-w-[500px] text-muted-foreground md:text-xl">
@@ -41,15 +41,15 @@ export default function Hero() {
               </Link>
             </div>
           </div>
-          <div>
-            <Image
-              src={"https://github.com/ekovegeance.png"}
-              width={400}
-              height={400}
-              alt="ekovegeance"
-              className="object-cover w-48 h-48 transition duration-700 ease-in-out delay-150 rounded-lg md:w-64 md:h-64 hover:shadow-xl hover:rotate-12 hover:duration-200 hover:ease-in-out hover:transition-shadow hover:rounded-3xl hover:-translate-y-1 hover:scale-110"
-            />
-          </div>
+          {/*<div>*/}
+          {/*  <Image*/}
+          {/*    src={"https://github.com/ekovegeance.png"}*/}
+          {/*    width={400}*/}
+          {/*    height={400}*/}
+          {/*    alt="ekovegeance"*/}
+          {/*    className="object-cover w-48 h-48 transition duration-700 ease-in-out delay-150 rounded-lg md:w-64 md:h-64 hover:shadow-xl hover:rotate-12 hover:duration-200 hover:ease-in-out hover:transition-shadow hover:rounded-3xl hover:-translate-y-1 hover:scale-110"*/}
+          {/*  />*/}
+          {/*</div>*/}
         </div>
       </section>
     </div>

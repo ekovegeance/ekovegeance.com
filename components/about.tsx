@@ -8,7 +8,7 @@ import ButtonMac from "./button-mac";
 
 export default function About() {
   return (
-    <section className="py-12 mx-6 border-primary-foreground border-x md:py-24 lg:py-32">
+    <section className=" py-10 mx-6 border-primary-foreground border-x">
       <div className="grid gap-8 transition duration-300 ease-in-out delay-150 hover:bg-zinc-50 dark:hover:bg-zinc-900 hover:rounded-xl hover:mx-8 hover:-translate-y-1 ">
         <div className="grid gap-4 border-b border-primary-foreground">
           <ButtonMac />
@@ -53,7 +53,7 @@ export default function About() {
                 href="mailto:me@ekovegeance.com"
                 className="underline underline-offset-4"
               >
-                me@ekovegeance.com
+                me@ekovegeance.com {" "}
               </a>
               or connect with me on {" "}
               <Link

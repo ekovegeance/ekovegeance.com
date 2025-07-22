@@ -5,7 +5,8 @@ import { ModeToggle } from "@/components/mode-toggle";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-center justify-between w-full gap-2 px-4 py-6 border-t sm:flex-row shrink-0 md:px-12 dark:border-zinc-700/70">
+    <footer>
+        <div className="flex flex-col items-center justify-between w-full gap-2 px-4 py-6 border-t sm:flex-row shrink-0 md:px-12 dark:border-zinc-700/70">
         <div className="flex items-center gap-2 text-xs text-muted-foreground dark:text-card-foreground">
           <Server className="w-4 h-4" />
           <Link href="https://status.ekovegeance.com/">
@@ -34,6 +35,10 @@ export default function Footer() {
           </Link>
         </nav>
         <ModeToggle />
+        </div>
+        <div>
+            <h1 className="text-4xl text-center sm:text-6xl md:text-8xl font-extrabold tracking-wide">ekovegeance </h1>
+        </div>
 
     </footer>
   );
