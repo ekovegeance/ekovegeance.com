@@ -1,6 +1,5 @@
 # Personal website 😎
 
-![ekovegeance](https://github.com/ekovegeance/ekovegeance.com/blob/main/page-ekovegeance.png)
 ## Getting Started
 
 First, run the development server:
