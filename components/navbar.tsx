@@ -3,6 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { CommandDialogDemo } from "./command";
+import {Kbd} from "@/components/ui/kbd";
 
 export function Navbar() {
 
@@ -15,6 +16,7 @@ export function Navbar() {
             <div className="flex-shrink-0 flex items-center">
               <Link href="/" className="text-xl font-bold text-gray-800">
                 <span className="text-primary">ekovegeance/</span>
+                <Kbd>⌘ + e</Kbd>
               </Link>
             </div>
           </div>
